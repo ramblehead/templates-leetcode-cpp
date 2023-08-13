@@ -1,0 +1,26 @@
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.ruff_cache/
+
+
+# Conan, CMake, C/C++, etc.
+
+/build
+/CMakeUserPresets.json
+/.cache/clangd
+/compile_commands.json
+
+# Backup Files
+*.bkp
+
+
+# Emacs
+*.~undo-tree~
+\#*\#
+
+
+/.rh-trusted

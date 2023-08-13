@@ -1,0 +1,11 @@
+[requires]
+range-v3/0.12.0
+boost/1.82.0
+
+[tool_requires]
+cmake/3.26.4
+
+[generators]
+CMakeDeps
+CMakeToolchain
+VirtualBuildEnv
