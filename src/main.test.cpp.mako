@@ -6,7 +6,7 @@
 
 // NOLINTBEGIN(misc-include-cleaner)
 
-#include "main.hpp"
+#include "main_0.hpp"
 #include <boost/test/tools/old/interface.hpp>
 
 #define BOOST_TEST_MODULE ${project_name}

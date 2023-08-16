@@ -2,16 +2,24 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <vector>
 
-#include "main.hpp"
+#include "main_0.hpp"
 
-constexpr int douglas_adams_number = 42;
+using Input = int;
+constexpr Input douglas_adams_number = 42;
 
 auto main(int /*argc*/, char* /*argv*/[]) -> int {
-  Solution sol;
+  std::vector<Input> inputs{douglas_adams_number};
 
-  std::cout << "Identity function solution(douglas_adams_number) == "
-            << sol.identity(douglas_adams_number) << "\n";
+  std::cout << "== main_0 ==\n\n";
+
+  for (const auto& input : inputs) {
+    main_0::Solution s_0;
+    std::cout << "Input: " << input << "\n";
+    std::cout << "Identity function solution: "
+              << s_0.identity(input) << "\n";
+  }
 
   return EXIT_SUCCESS;
 }

@@ -4,8 +4,8 @@
 #include <cassert>
 #include <cstdint>
 
-inline auto solution() {
-}
+namespace main_0 {
+
 class Solution {
  public:
   auto identity(std::int32_t N) -> std::int32_t {
@@ -13,3 +13,5 @@ class Solution {
     return N;
   }
 };
+
+} // namespace main_0

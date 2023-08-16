@@ -10,11 +10,11 @@
 #include <range/v3/algorithm/for_each.hpp>
 #include <range/v3/view.hpp>
 
-#include "main.hpp"
+#include "main_0.hpp"
 
 namespace views = ranges::views;
 
-constexpr auto CYCLES_COUNT = 1'000'000;
+constexpr auto CYCLES_COUNT = 100'000;
 
 auto main(int /*argc*/, char* /*argv*/[]) -> int {
   std::random_device device;
@@ -34,11 +34,12 @@ auto main(int /*argc*/, char* /*argv*/[]) -> int {
   ranges::for_each(
     numsView,
     [&solutionRes, &durationAvgNanoSecond](int32_t num) {
+      main_0::Solution solution;
+
       const auto start = std::chrono::high_resolution_clock::now();
-
-      // solutionRes = solution(num);
-
+      solution.identity(num);
       const auto finish = std::chrono::high_resolution_clock::now();
+
       const std::chrono::duration<double, std::nano> duration = finish - start;
       durationAvgNanoSecond += duration.count();
     }
