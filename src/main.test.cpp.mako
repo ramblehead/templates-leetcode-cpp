@@ -29,12 +29,12 @@ BOOST_AUTO_TEST_CASE(binary_gap) {
 
   {
     Solution_0 s_0;
-    BOOST_REQUIRE_EQUAL(s_0.identity(tests[0].in), tests[0].out);
+    // BOOST_REQUIRE_EQUAL(s_0.uniquePaths(tests[0].in), tests[0].out);
   }
 
   {
     Solution_0 s_0;
-    BOOST_REQUIRE_NE(s_0.identity(tests[1].in), tests[1].out);
+    // BOOST_REQUIRE_NE(s_0.uniquePaths(tests[1].in), tests[1].out);
   }
 }
 

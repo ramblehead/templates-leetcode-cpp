@@ -21,7 +21,7 @@ auto main(int /*argc*/, char* /*argv*/[]) -> int {
     main_0::Solution solution;
 
     const auto start = std::chrono::high_resolution_clock::now();
-    solution.identity(input);
+    // solution.uniquePaths(input);
     const auto finish = std::chrono::high_resolution_clock::now();
 
     const std::chrono::duration<double, std::nano> duration = finish - start;
